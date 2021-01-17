@@ -444,6 +444,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     CustomDoze
 
+# Prebuilts
+PRODUCT_PACKAGES += \
+    Sounds
+
 # Board
 PRODUCT_USES_QCOM_HARDWARE := true
 PRODUCT_BOARD_PLATFORM := msm8996
