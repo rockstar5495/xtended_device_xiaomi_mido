@@ -130,6 +130,9 @@ ro.zram.periodic_wb_delay_hours=24
 # Zygote Preforking
 persist.device.config.runtime_native.uasp_pool_enabled=true
 
+# Navbar
+qemu.hw.mainkeys=0
+
 # Octavi
 PRODUCT_PRODUCT_PROPERTIES += \
 ro.octavi.maintainer=Sagar.Rokade \
