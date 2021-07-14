@@ -4,9 +4,3 @@
 
 # Default to BFQ I/O scheduler
 persist.sys.io.scheduler=bfq
-
-# Octavi
-PRODUCT_PROPERTY_OVERRIDES += \
-ro.octavi.maintainer=Sagar.Rokade
-ro.octavi.version=2.6
-ro.octavi.status=Official

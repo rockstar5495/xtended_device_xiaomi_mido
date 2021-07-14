@@ -134,3 +134,9 @@ persist.device.config.runtime_native.uasp_pool_enabled=true
 ro.sf.blurs_are_expensive=1
 ro.surface_flinger.supports_background_blur=1
 
+# Octavi
+PRODUCT_PRODUCT_PROPERTIES += \
+ro.octavi.maintainer=Sagar.Rokade \
+ro.octavi.status=Official \
+ro.octavi.branding.version=2.7 \
+ro.octavi.cpu=Snapdragon625
