@@ -147,7 +147,7 @@ qemu.hw.mainkeys=0
 PRODUCT_PRODUCT_PROPERTIES += \
 ro.octavi.maintainer=Sagar.Rokade & Pratyaksh.Bharadwaj \
 ro.octavi.status=Official \
-ro.octavi.branding.version=2.8 \
+ro.octavi.branding.version=2.9 \
 ro.octavi.cpu=Snapdragon625
 
 # Dialer Blurs
