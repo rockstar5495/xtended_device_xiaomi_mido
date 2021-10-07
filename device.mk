@@ -133,6 +133,8 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
+    android.hardware.bluetooth@1.0.vendor \
+    android.hardware.bluetooth@1.1.vendor \
     vendor.qti.hardware.btconfigstore@1.0.vendor:64 \
     vendor.qti.hardware.btconfigstore@2.0.vendor:64
 
@@ -178,7 +180,9 @@ PRODUCT_PACKAGES += \
     libqdMetaData \
     libtinyxml \
     libvulkan \
-    vendor.display.config@1.0.vendor
+    vendor.display.config@1.0.vendor \
+    vendor.display.config@2.0 \
+    android.frameworks.displayservice@1.0.vendor
 
 # Device-specific settings
 PRODUCT_PACKAGES += \
@@ -188,11 +192,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl:64 \
     android.hardware.drm@1.0-service-lazy \
-    android.hardware.drm@1.3-service.clearkey
+    android.hardware.drm@1.3-service.clearkey \
+    android.hardware.drm@1.4.vendor \
+    android.hardware.drm@1.4-service.clearkey
 
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service.xiaomi_mido \
+    android.hardware.biometrics.fingerprint@2.1.vendor \
     fakelogprint \
     libshims_gxfpd
 
@@ -263,7 +270,9 @@ PRODUCT_PACKAGES += \
 # Keymaster HAL
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0-impl:64 \
-    android.hardware.keymaster@3.0-service
+    android.hardware.keymaster@3.0-service \
+    android.hardware.gatekeeper@1.0.vendor \
+    android.hardware.keymaster@4.1.vendor
 
 # Lights
 PRODUCT_PACKAGES += \
@@ -293,6 +302,14 @@ PRODUCT_PACKAGES += \
     libavservices_minijail.vendor \
     libnbaio
 
+# Net
+PRODUCT_PACKAGES += \
+    android.system.net.netd@1.1.vendor
+
+# Neuralnetworks
+PRODUCT_PACKAGES += \
+    android.hardware.neuralnetworks@1.3.vendor
+
 # OMX
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \
@@ -307,7 +324,8 @@ PRODUCT_PACKAGES += \
     libOmxVdec \
     libOmxVenc \
     libstagefrighthw \
-    libstagefright_enc_common
+    libstagefright_enc_common \
+    android.hardware.media.c2@1.0.vendor
 
 # Power
 PRODUCT_PACKAGES += \
@@ -352,6 +370,10 @@ PRODUCT_PACKAGES += \
 # RIL
 PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.0 \
+    android.hardware.radio@1.5.vendor \
+    android.hardware.radio.config@1.2.vendor \
+    android.hardware.radio.deprecated@1.0.vendor \
+    android.hardware.secure_element@1.2.vendor \
     librmnetctl \
     libcnefeatureconfig \
     qti-telephony-hidl-wrapper \
@@ -367,6 +389,7 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl:64 \
     android.hardware.sensors@1.0-service \
+    android.frameworks.sensorservice@1.0.vendor \
     libsensorndkbridge
 
 # Thermal
@@ -400,6 +423,7 @@ PRODUCT_COPY_FILES += \
 # Wifi
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service-lazy \
+    android.hardware.wifi@1.5.vendor \
     libcld80211 \
     libwpa_client \
     hostapd \
