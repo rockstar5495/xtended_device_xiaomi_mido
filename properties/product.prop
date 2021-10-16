@@ -13,3 +13,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.secure=0 \
     ro.adb.secure=0
 endif
+
+# IORap
+persist.device_config.runtime_native_boot.iorap_readahead_enable=true
