@@ -121,6 +121,9 @@ ro.telephony.default_network=22,22
 # WiFi
 persist.mm.sta.enable=0
 
+# Storage.xml moment
+persist.sys.binary_xml=false
+
 # WFD
 persist.hwc.enable_vds=1
 
