@@ -38,7 +38,7 @@ PRODUCT_BOARD_PLATFORM=msm8953
 BOARD_QCOM_HARDWARE=true
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
-    
+
 QCOM_SOONG_NAMESPACE := \
     $(LOCAL_PATH)/qcom-caf
 
@@ -153,7 +153,7 @@ PRODUCT_PACKAGES += \
     libcamshim \
     libmm-qcamera \
     libui_shim \
-    libmm-qcamera
+    GCam
 
 # Component overrides
 PRODUCT_COPY_FILES += \
