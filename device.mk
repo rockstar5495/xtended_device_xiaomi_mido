@@ -497,3 +497,7 @@ PRODUCT_COPY_FILES += \
 # Remove Packages
 PRODUCT_PACKAGES += \
     RemovePackages
+
+# Enable gestural navigation overlay to match default navigation mode
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural
