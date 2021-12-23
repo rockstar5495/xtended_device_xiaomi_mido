@@ -160,3 +160,6 @@ persist.dirac.acs.ignore_error=1
 # Dirac headset effect
 ro.audio.soundfx.dirac=true
 persist.audio.dirac.speaker=true
+
+# Priv-app permission
+ro.control_privapp_permissions=false
