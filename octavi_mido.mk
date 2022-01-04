@@ -24,9 +24,6 @@ $(call inherit-product, device/xiaomi/mido/device.mk)
 # Inherit some common OctaviOS stuff.
 $(call inherit-product, vendor/octavi/config/common_full_phone.mk)
 
-# Inherit MIUI Camera
-$(call inherit-product, vendor/xiaomi/MiuiCamera/config.mk)
-
 # Mido bootanimation flag
 TARGET_BOOT_ANIMATION_RES := 1080
 
