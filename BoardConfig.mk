@@ -42,19 +42,6 @@ TARGET_SYSTEM_EXT_PROP := $(DEVICE_PATH)/properties/system_ext.prop
 TARGET_SYSTEM_PROP := $(DEVICE_PATH)/properties/system.prop
 TARGET_VENDOR_PROP := $(DEVICE_PATH)/properties/vendor.prop
 
-# hacks
-BUILD_BROKEN_DUP_RULES := true
-BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
-SKIP_ABI_CHECK=true
-BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
-BUILD_BROKEN_VINTF_PRODUCT_COPY_FILES := true
-
-# Board
-PRODUCT_BOARD_PLATFORM := msm8953
-PRODUCT_USES_QCOM_HARDWARE := true
-
-OVERRIDE_QCOM_HARDWARE_VARIANT := msm8996-r
-
 # Kernel
 TARGET_KERNEL_CONFIG := mido_defconfig
 BOARD_KERNEL_BASE := 0x80000000
@@ -172,9 +159,6 @@ VENDOR_SECURITY_PATCH := 2021-07-05
 # SELinux
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
-
-# We modify several neverallows, so let the build proceed
-SELINUX_IGNORE_NEVERALLOWS := true
 
 # Shims
 TARGET_LD_SHIM_LIBS := \
