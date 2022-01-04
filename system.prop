@@ -145,11 +145,4 @@ persist.device.config.runtime_native.uasp_pool_enabled=true
 qemu.hw.mainkeys=0
 
 # Octavi
-PRODUCT_PRODUCT_PROPERTIES += \
-ro.octavi.maintainer=Sagar.Rokade&Pratyaksh.Bharadwaj \
-ro.octavi.status=Official \
-ro.octavi.branding.version=2.9 \
-ro.octavi.cpu=Snapdragon625
-
-# Dialer Blurs
-dialer.supports.blur=true
+ro.octavi.maintainer=pbharadwaj_95
