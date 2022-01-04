@@ -7,14 +7,8 @@ allow system_server sysfs_battery_supply:file { read open getattr };
 # vibrator
 allow system_server sysfs_vibrator:file read;
 
-# Smart charger
-allow system_server sysfs_battery_supply:file rw_file_perms;
-
 # Pocket Lock
 allow system_server default_android_service:service_manager { add };
 
 # zygote
 allow system_server app_zygote:process getpgid;
-
-# Smart charging
-allow system_server sysfs_battery_supply:file rw_file_perms;
