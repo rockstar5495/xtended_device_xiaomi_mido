@@ -16,6 +16,8 @@
 
 DEVICE_PATH := device/xiaomi/mido
 
+YOUR_HW_PLATFORM := msm8953
+
 # HACKS
 BUILD_BROKEN_DUP_RULES := true
 
