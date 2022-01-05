@@ -41,6 +41,8 @@ TARGET_BOARD_PLATFORM := msm8953
 
 TARGET_BOARD_SUFFIX := _64
 
+OVERRIDE_QCOM_HARDWARE_VARIANT := msm8996-r
+
 # Device Properties
 TARGET_ODM_PROP := $(DEVICE_PATH)/properties/odm.prop
 TARGET_PRODUCT_PROP := $(DEVICE_PATH)/properties/product.prop
