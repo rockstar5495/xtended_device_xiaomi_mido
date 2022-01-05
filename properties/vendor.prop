@@ -163,3 +163,6 @@ persist.audio.dirac.speaker=true
 
 # Priv-app permission
 ro.control_privapp_permissions=false
+
+# Fingerprint
+fingerprint.nocleanup=true
