@@ -34,6 +34,7 @@ TARGET_SCREEN_DENSITY := 400
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGEF_INCLUDE_LIVE_WALLPAPERS := false
+USE_PIXEL_CHARGER := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := mido
