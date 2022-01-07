@@ -93,13 +93,13 @@ void low_ram_device()
         property_override("pm.dexopt.downgrade_after_inactive_days", "10");
         property_override("pm.dexopt.shared", "quicken");
     }
+}
 
 /* From Magisk@jni/magiskhide/hide_utils.c */
 static const char *snet_prop_key[] = {
     "ro.boot.vbmeta.device_state",
     "ro.boot.verifiedbootstate",
     "ro.boot.flash.locked",
-    "ro.boot.selinux",
     "ro.boot.veritymode",
     "ro.boot.warranty_bit",
     "ro.warranty_bit",
@@ -118,7 +118,6 @@ static const char *snet_prop_value[] = {
     "green",
     "1",
     "enforcing",
-    "enforcing",
     "0",
     "0",
     "0",
@@ -131,7 +130,7 @@ static const char *snet_prop_value[] = {
     NULL
 };
 
-static void workaround_snet_properties() {
+ static void workaround_snet_properties() {
 
      // Hide all sensitive props
     for (int i = 0; snet_prop_key[i]; ++i) {
@@ -153,6 +152,7 @@ void vendor_load_properties()
     property_override("dalvik.vm.heapminfree", heapminfree);
     property_override("dalvik.vm.heapmaxfree", heapmaxfree);
 
-    // Workaround SafetyNet
+   // Workaround SafetyNet
     workaround_snet_properties();
+
 }
