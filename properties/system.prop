@@ -142,3 +142,6 @@ qemu.hw.mainkeys=0
 
 # Octavi
 ro.octavi.maintainer=pbharadwaj_95
+
+# Enable support of one-handed mode
+ro.support_one_handed_mode=true
