@@ -12,3 +12,5 @@ allow system_server default_android_service:service_manager { add };
 
 # zygote
 allow system_server app_zygote:process getpgid;
+
+allow system_server init:binder { call };

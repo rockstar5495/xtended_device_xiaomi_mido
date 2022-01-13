@@ -14,3 +14,10 @@ allow init sysfs_leds:lnk_file read;
 
 # Allow init to chown/chmod on pseudo files in /sys
 allow init sysfs_type:file { setattr };
+
+allow init vendor_file:file { execute  execute_no_trans };
+allow init servicemanager:binder { call  transfer };
+allow init hwservicemanager:binder { call };
+allow init hal_power_service:service_manager { add };
+allow init hal_perf_hwservice:hwservice_manager { find };
+
