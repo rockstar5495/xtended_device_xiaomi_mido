@@ -11,6 +11,12 @@ persist.sys.usb.config=mtp,adb
 ro.config.media_vol_steps=25
 ro.config.vc_call_vol_steps=6
 
+# Bluetooth
+persist.vendor.btstack.enable.lpa=true
+persist.vendor.btstack.enable.twsplus=true
+persist.vendor.bt.a2dp.hal.implementation=true
+ro.bluetooth.library_name=libbluetooth_qti.so
+
 # BPF
 ro.kernel.ebpf.supported=true
 
